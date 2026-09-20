@@ -1,0 +1,48 @@
+name: Version Signal
+description: >-
+  Returns the current stable version and publication date of any npm or PyPI package, sourced from the canonical
+  registry. A free, no-signup lookup tool with a browser UI and a machine-readable API, hosted on a Cloudflare Worker.
+url: https://raw.githubusercontent.com/api-evangelist/version-signal-api/refs/heads/main/apis.yml
+created: '2026-09-20'
+modified: '2026-09-20'
+specificationVersion: '0.21'
+tags:
+  - developer tools
+  - package registry
+  - npm
+  - pypi
+  - versions
+  - software supply chain
+  - dependency management
+  - open-source metadata
+apis:
+  - name: Version Signal API
+    description: >-
+      Free, no-auth REST API returning the current stable version and publication date of npm and PyPI packages from the
+      canonical registry.
+    humanURL: https://version-signal.inboxtzdjqv.workers.dev/
+    baseURL: https://version-signal.inboxtzdjqv.workers.dev
+    tags:
+      - developer tools
+      - package registry
+      - npm
+      - pypi
+      - versions
+      - software supply chain
+      - dependency management
+      - open-source metadata
+    properties:
+      - type: OpenAPI
+        url: https://version-signal.inboxtzdjqv.workers.dev/openapi.json
+      - type: LLMsTxt
+        url: https://version-signal.inboxtzdjqv.workers.dev/llms.txt
+      - type: Documentation
+        url: https://version-signal.inboxtzdjqv.workers.dev/
+maintainers:
+  - FN: Version Signal
+    url: https://version-signal.inboxtzdjqv.workers.dev/
+generated:
+  by: apis.io/add
+  model: claude-opus-4-8
+  confidence: 88
+  at: '2026-09-20T13:31:04.867Z'
