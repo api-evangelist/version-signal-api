@@ -1,0 +1,17 @@
+generated: '2026-09-20'
+method: derived
+source: openapi/version-signal-api-openapi.json + homepage 2026-09-20
+versioning:
+  scheme: none-in-path
+  current: '1.0.0'          # from OpenAPI info.version
+  docs: https://version-signal.inboxtzdjqv.workers.dev/
+deprecation:
+  policy_url: null
+  sunset_header: false
+sla:
+  url: null
+status_page: null
+deprecated_operations: []
+note: >-
+  No versioning policy, deprecation policy, SLA, or status page is published. The API version 1.0.0
+  is declared only in the OpenAPI info block; the URL path carries no version segment.

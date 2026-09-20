@@ -1,0 +1,30 @@
+generated: '2026-09-20'
+method: derived
+source: openapi/version-signal-api-openapi.json + live probes 2026-09-20
+auth:
+  style: none
+  note: public, no key or token required
+pagination:
+  style: none
+  note: single-record lookup, no collections
+versioning:
+  style: none-in-path
+  current: '1.0.0'
+request_id:
+  supported: false
+error_envelope:
+  shape: '{"error":"<code>"}'
+  format: custom-json
+  note: not RFC 9457
+rate_limit_signaling:
+  headers: []
+  note: no RateLimit-* / X-RateLimit-* / Retry-After headers observed on live responses
+idempotency:
+  coverage: na          # read-only API (GET only) — no mutating surface to protect
+  note: The only operation is a GET lookup; there are no writes, so idempotency does not apply.
+reversibility:
+  grade: na             # read-only API — no actions to reverse
+  note: No write/mutating operations exist, so there is nothing to reverse.
+dry_run_mode:
+  supported: na         # read-only API
+  note: No write operations, so a dry-run mode is not applicable.

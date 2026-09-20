@@ -1,0 +1,6 @@
+# Version Signal API
+
+Current stable npm and PyPI package versions and publication dates.
+
+Documentation: https://version-signal.inboxtzdjqv.workers.dev/
+Example: GET /api/version?ecosystem=npm&package=express

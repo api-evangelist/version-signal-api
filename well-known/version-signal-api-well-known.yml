@@ -1,0 +1,39 @@
+generated: '2026-09-20'
+method: searched
+source: live probes of the API host 2026-09-20
+path_echo_control: passed   # /.well-known/<random>.json returned 404 — host is not a path-echoing catch-all
+hosts:
+  - host: https://version-signal.inboxtzdjqv.workers.dev
+    documents:
+      - path: /.well-known/apis.json
+        status: 200
+        file: version-signal-api-apis-json.json   # valid APIs.json index (has apis[]) — real document
+      - path: /apis.json
+        status: 404
+      - path: /apis.yml
+        status: 404
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource
+        status: 404
+      - path: /.well-known/aauth-resource.json
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+    negative_control:
+      path: /.well-known/version-signal-api-negctl-7f3ab91c.json
+      status: 404
+hit_count: 1
+note: >-
+  Only /.well-known/apis.json returned a real document (a valid APIs.json index naming the API
+  and its OpenAPI). No security.txt, OAuth/OIDC discovery, ai-plugin, or agent card is served.

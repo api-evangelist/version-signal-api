@@ -1,0 +1,9 @@
+generated: '2026-09-20'
+method: probed
+source: live probes of the API host + homepage 2026-09-20
+signals: {}
+note: >-
+  No horizontal regulatory signals found. Probed for security.txt, subprocessor/DPA pages, an
+  accessibility/VPAT report, SBOM, AI transparency, data residency, and a privacy-request surface
+  — none served. This is a free, anonymous single-purpose lookup tool on a Cloudflare Worker with
+  no legal/compliance pages. Empty signals is the expected, honest measurement.

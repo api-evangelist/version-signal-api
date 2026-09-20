@@ -1,0 +1,19 @@
+generated: '2026-09-20'
+method: derived
+source: openapi/version-signal-api-openapi.json + live probes 2026-09-20
+standards:
+  - id: oauth2
+    conforms: false
+    evidence: no securitySchemes; API is public/no-auth
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: errors use flat {"error":"<code>"} JSON, not application/problem+json
+  - id: json-api
+    conforms: false
+  - id: pagination
+    conforms: false
+    evidence: single-record lookup; no collection/pagination surface
+domain_standard_conformance: []
+note: >-
+  A simple single-operation JSON lookup API. No cross-cutting or domain standard is declared or
+  detected. Reward-only file — recorded absences, not penalties.

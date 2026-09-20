@@ -1,0 +1,19 @@
+generated: '2026-09-20'
+method: searched
+source: https://version-signal.inboxtzdjqv.workers.dev/ (homepage)
+plan_count: 1
+currency: USD
+plans:
+  - name: Free
+    price: 0
+    currency: USD
+    billing_period: none
+    included_quota: unlimited-undocumented
+    overage: null
+    limits:
+      note: >-
+        No documented request quota or rate limit. Homepage states the service is free with no
+        signup and requires no authentication.
+note: >-
+  Single free tier, no signup, no paid plan for this API. (A separate paid sibling product,
+  Dependency Truth, is x402-metered on a different subdomain and is not part of this listing.)

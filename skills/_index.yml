@@ -1,0 +1,10 @@
+generated: '2026-09-20'
+method: generated
+source: openapi/version-signal-api-openapi.json
+skills:
+  - name: check-package-version
+    file: version-signal-api-check-package-version.md
+    description: >-
+      Look up the current stable version and publication date of an npm or PyPI package.
+    operations:
+      - "GET /api/version"

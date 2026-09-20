@@ -1,0 +1,21 @@
+generated: '2026-09-20'
+method: probed
+source: live responses from https://version-signal.inboxtzdjqv.workers.dev/api/version probed 2026-09-20
+format: custom-json          # NOT rfc9457 — errors are a flat {"error":"<code>"} envelope
+envelope:
+  field: error
+  shape: '{"error":"<code>"}'
+problems:
+  - status: 400
+    code: "ecosystem and package required"
+    title: Missing required query parameters
+    remediation: Supply both the `ecosystem` (npm|pypi) and `package` query parameters.
+    source_operation: "openapi/version-signal-api-openapi.json#GET /api/version"
+  - status: 404
+    code: not_found
+    title: Package not found in registry
+    remediation: The named package does not exist in the given registry; check spelling and ecosystem.
+    source_operation: "openapi/version-signal-api-openapi.json#GET /api/version"
+note: >-
+  The OpenAPI declares only a 200 response, so error shapes were captured by probing the live API.
+  Errors use a flat {"error":"<code>"} JSON body, not RFC 9457 problem+json.

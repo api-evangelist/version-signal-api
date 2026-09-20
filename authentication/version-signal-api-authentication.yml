@@ -1,0 +1,12 @@
+generated: '2026-09-20'
+method: searched
+source: https://version-signal.inboxtzdjqv.workers.dev/ (homepage/docs) + openapi/version-signal-api-openapi.json
+summary:
+  types: [none]
+  api_key_in: []
+  oauth2_flows: []
+  note: >-
+    Public, no-auth API. The OpenAPI declares no securitySchemes and the homepage states the
+    service is free with no signup. Requests to GET /api/version succeed anonymously (verified
+    live 2026-09-20). No API key, token, or account is required.
+schemes: []

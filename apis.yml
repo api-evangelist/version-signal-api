@@ -33,16 +33,54 @@ apis:
       - open-source metadata
     properties:
       - type: OpenAPI
+        url: openapi/version-signal-api-openapi.json
+      - type: OpenAPI
+        name: OpenAPI (provider-hosted)
         url: https://version-signal.inboxtzdjqv.workers.dev/openapi.json
       - type: LLMsTxt
+        url: llms/version-signal-api-llms.txt
+      - type: LLMsTxt
+        name: llms.txt (provider-hosted)
         url: https://version-signal.inboxtzdjqv.workers.dev/llms.txt
       - type: Documentation
         url: https://version-signal.inboxtzdjqv.workers.dev/
+      - type: Overlay
+        url: overlays/version-signal-api-openapi-overlay.yaml
 maintainers:
   - FN: Version Signal
     url: https://version-signal.inboxtzdjqv.workers.dev/
-generated:
+x-generated:
   by: apis.io/add
   model: claude-opus-4-8
   confidence: 88
   at: '2026-09-20T13:31:04.867Z'
+common:
+- type: Website
+  url: https://version-signal.inboxtzdjqv.workers.dev/
+- type: Documentation
+  url: https://version-signal.inboxtzdjqv.workers.dev/
+- type: DomainSecurity
+  url: security/version-signal-api-domain-security.yml
+- type: Authentication
+  url: authentication/version-signal-api-authentication.yml
+- type: WellKnown
+  url: well-known/version-signal-api-well-known.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: ErrorCatalog
+  url: errors/version-signal-api-problem-types.yml
+- type: Conventions
+  url: conventions/version-signal-api-conventions.yml
+- type: Lifecycle
+  url: lifecycle/version-signal-api-lifecycle.yml
+- type: Conformance
+  url: conformance/version-signal-api-conformance.yml
+- type: Plans
+  url: plans/version-signal-api-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/version-signal-api-rate-limits.yml
+x-enrichment:
+  date: '2026-09-20'
+  status: enriched
+  artifacts_added: 17
+  pass: local-v3

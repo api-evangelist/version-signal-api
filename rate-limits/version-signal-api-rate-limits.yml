@@ -1,0 +1,11 @@
+generated: '2026-09-20'
+method: probed
+source: live response headers + homepage 2026-09-20
+limit_count: 0
+limits: []
+response_headers: []
+note: >-
+  No rate limits are documented, and no RateLimit-* / X-RateLimit-* / Retry-After headers were
+  observed on live 200 responses (only Cloudflare edge headers were present). Honest zero — either
+  the free API is unthrottled at the application layer or any limiting is undocumented Cloudflare
+  edge protection.

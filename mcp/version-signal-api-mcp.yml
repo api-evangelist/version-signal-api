@@ -1,0 +1,29 @@
+generated: '2026-09-20'
+method: derived
+status: candidate
+source: openapi/version-signal-api-openapi.json
+deployment:
+  mode: none            # no hosted or stdio MCP server is published; this is a derived candidate
+  auth: none
+  verified: derived
+server:
+  name: version-signal
+  transport: http
+tools:
+  - name: get_package_version
+    description: >-
+      Return the current stable version and publication date of an npm or PyPI package from the
+      canonical registry.
+    source_operation: openapi/version-signal-api-openapi.json#GET /api/version
+    input_schema:
+      ecosystem:
+        type: string
+        enum: [npm, pypi]
+        required: true
+      package:
+        type: string
+        required: true
+note: >-
+  No official MCP server was found for this provider (searched docs/homepage, npm, MCP registries).
+  This is a single candidate tool derived from the one public REST operation. Do not treat it as a
+  reachable agent surface.

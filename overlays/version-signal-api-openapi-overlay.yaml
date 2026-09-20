@@ -1,0 +1,23 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Version Signal API
+  version: 1.0.0
+extends: openapi/version-signal-api-openapi.json
+actions:
+  - target: $.info
+    update:
+      x-apievangelist-enriched: '2026-09-20'
+      description: >-
+        Free, no-auth REST API returning the current stable version and publication date of an npm
+        or PyPI package, read from the canonical registry. Hosted on a Cloudflare Worker.
+  - target: $.paths['/api/version'].get
+    update:
+      operationId: getPackageVersion
+      summary: Get current stable package version
+      description: >-
+        Returns the current stable version and publication date of the named npm or PyPI package.
+      responses:
+        '400':
+          description: Missing required query parameters (ecosystem and package)
+        '404':
+          description: Package not found in the registry
