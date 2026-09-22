@@ -7,6 +7,15 @@ created: '2026-09-20'
 modified: '2026-09-20'
 specificationVersion: '0.21'
 tags:
+  - Developer Tools
+  - Package Registry
+  - npm
+  - PyPI
+  - Versions
+  - Software Supply Chain
+  - Dependency Management
+  - open-source metadata
+tags_raw:
   - developer tools
   - package registry
   - npm
@@ -23,6 +32,15 @@ apis:
     humanURL: https://version-signal.inboxtzdjqv.workers.dev/
     baseURL: https://version-signal.inboxtzdjqv.workers.dev
     tags:
+      - Developer Tools
+      - Package Registry
+      - npm
+      - PyPI
+      - Versions
+      - Software Supply Chain
+      - Dependency Management
+      - open-source metadata
+    tags_raw:
       - developer tools
       - package registry
       - npm
