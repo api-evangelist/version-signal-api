@@ -25,45 +25,21 @@ tags_raw:
   - dependency management
   - open-source metadata
 apis:
-  - name: Version Signal API
-    description: >-
-      Free, no-auth REST API returning the current stable version and publication date of npm and PyPI packages from the
-      canonical registry.
-    humanURL: https://version-signal.inboxtzdjqv.workers.dev/
-    baseURL: https://version-signal.inboxtzdjqv.workers.dev
-    tags:
-      - Developer Tools
-      - Package Registry
-      - npm
-      - PyPI
-      - Versions
-      - Software Supply Chain
-      - Dependency Management
-      - open-source metadata
-    tags_raw:
-      - developer tools
-      - package registry
-      - npm
-      - pypi
-      - versions
-      - software supply chain
-      - dependency management
-      - open-source metadata
-    properties:
-      - type: OpenAPI
-        url: openapi/version-signal-api-openapi.json
-      - type: OpenAPI
-        name: OpenAPI (provider-hosted)
-        url: https://version-signal.inboxtzdjqv.workers.dev/openapi.json
-      - type: LLMsTxt
-        url: llms/version-signal-api-llms.txt
-      - type: LLMsTxt
-        name: llms.txt (provider-hosted)
-        url: https://version-signal.inboxtzdjqv.workers.dev/llms.txt
-      - type: Documentation
-        url: https://version-signal.inboxtzdjqv.workers.dev/
-      - type: Overlay
-        url: overlays/version-signal-api-openapi-overlay.yaml
+- aid: version-signal-api:version-signal-api-version-api
+  name: Version Signal Version API
+  description: The Version API from Version Signal — 1 operation(s) for version.
+  humanURL: https://version-signal.inboxtzdjqv.workers.dev/
+  tags:
+  - Version
+  properties:
+  - type: OpenAPI
+    url: openapi/version-signal-api-version-api-openapi.yml
+  - type: LLMsTxt
+    url: llms/version-signal-api-llms.txt
+  - type: LLMsTxt
+    url: https://version-signal.inboxtzdjqv.workers.dev/llms.txt
+  - type: Documentation
+    url: https://version-signal.inboxtzdjqv.workers.dev/
 maintainers:
   - FN: Version Signal
     url: https://version-signal.inboxtzdjqv.workers.dev/
@@ -73,6 +49,8 @@ x-generated:
   confidence: 88
   at: '2026-09-20T13:31:04.867Z'
 common:
+- type: Overlay
+  url: overlays/version-signal-api-openapi-overlay.yaml
 - type: Website
   url: https://version-signal.inboxtzdjqv.workers.dev/
 - type: Documentation
