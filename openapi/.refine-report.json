@@ -1,23 +1,22 @@
 {
   "provider": "version-signal-api",
   "sources": [
-    "version-signal-api-openapi.json"
+    "_original/version-signal-api-openapi.json"
   ],
   "outputs": [
     "version-signal-api-version-api-openapi.yml"
   ],
-  "archived": [
-    "archived openapi/version-signal-api-openapi.json"
-  ],
+  "archived": [],
   "errors": [],
-  "warnings": [
-    "no openapi/_original/ archive: this run re-split PREVIOUSLY REFINED output, so any base URL it carries is inherited from an earlier pass rather than read from a document the provider published"
-  ],
+  "warnings": [],
   "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
     "version-signal-api-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
     "version-signal-api-openapi.json: tagged paths GET /api/version -> Version",
     "version-signal-api-openapi.json: declared missing tag: Version",
-    "apis.yml register: written (+1 apis, 1 total)"
+    "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "version-signal-api-version-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
