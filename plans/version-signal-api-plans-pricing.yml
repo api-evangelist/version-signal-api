@@ -17,3 +17,16 @@ plans:
 note: >-
   Single free tier, no signup, no paid plan for this API. (A separate paid sibling product,
   Dependency Truth, is x402-metered on a different subdomain and is not part of this listing.)
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units: []
+  plans:
+  - name: Free
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
